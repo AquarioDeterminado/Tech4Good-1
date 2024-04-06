@@ -37,4 +37,9 @@ public class TitleScreenOpenBpx : MonoBehaviour, IPointerClickHandler, IPointerE
     {
         _image.sprite = closedLid;
     }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        throw new System.NotImplementedException();
+    }
 }

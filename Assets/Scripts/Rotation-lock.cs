@@ -18,11 +18,11 @@ public class LimitRotation : MonoBehaviour
     {
         if (transform.rotation.z >= 90)
         {
-            rb.MoveRotation(45);
+            rb.SetRotation(45);
         }
         if (transform.rotation.z  <= -90)
         {
-            rb.MoveRotation(-45);
+            rb.SetRotation(-45);
         }
     }
 }

@@ -161,7 +161,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5b9c97974f7424b1c8da54a22c171497, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -217,7 +217,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 672656038}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 46fd6ccdfa9e248209152ecc51283d6a, type: 2}
+  m_Material: {fileID: 6200000, guid: 02e4e6ed122d59c47aee4e28abb97de3, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -523,6 +523,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: WarmBox
       objectReference: {fileID: 0}
+    - target: {fileID: 794851424395591395, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3232855291702861387, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
+      propertyPath: m_Mass
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3232855291702861387, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 02e4e6ed122d59c47aee4e28abb97de3, type: 2}
+    - target: {fileID: 3530415086349291419, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 02e4e6ed122d59c47aee4e28abb97de3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -22,7 +22,7 @@ public class TitleScreenOpenBpx : MonoBehaviour, IPointerClickHandler, IPointerE
         
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnPon(PointerEventData eventData)
     {
        //TODO: Start Game; init player; move camera; move title
     }

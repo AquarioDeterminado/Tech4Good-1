@@ -1,3 +1,4 @@
+using System.Threading;
 using UnityEngine;
 
 public class Slide : MonoBehaviour
@@ -9,10 +10,12 @@ public class Slide : MonoBehaviour
     private Rigidbody2D rb;
     private bool isSliding = false;
     private float slideTimer = 0f;
+    private Vector3 startingPosition;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        startingPosition = transform.position;
     }
 
     void Update()
@@ -27,9 +30,23 @@ public class Slide : MonoBehaviour
         {
             transform.Rotate(0, 0, 1);
         }
-        if (Input.GetKeyDown("d"))
+        if (Input.GetKeyDown("r"))
         {
-            transform.Rotate(0, 0, -1);
+            //rb.AddForce(new Vector2 (0, 100));
+            // Check if the velocity is negative in the x-axis
+            if (rb.velocity.x < 0)
+            {
+                // Invert the x-axis velocity
+                rb.velocity = new Vector2(-rb.velocity.x, rb.velocity.y);
+            }
+
+            // Check if the velocity is negative in the y-axis
+            if (rb.velocity.y < 0)
+            {
+                // Invert the y-axis velocity
+                rb.velocity = new Vector2(rb.velocity.x, -rb.velocity.y);
+            }
+            transform.position = startingPosition;
         }
     }
 

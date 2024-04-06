@@ -22,11 +22,6 @@ public class TitleScreenOpenBpx : MonoBehaviour, IPointerClickHandler, IPointerE
         
     }
 
-    public void OnPon(PointerEventData eventData)
-    {
-       //TODO: Start Game; init player; move camera; move title
-    }
-
     public void OnPointerEnter(PointerEventData eventData)
     {
         Debug.Log("bonk");
@@ -36,5 +31,10 @@ public class TitleScreenOpenBpx : MonoBehaviour, IPointerClickHandler, IPointerE
     public void OnPointerExit(PointerEventData eventData)
     {
         _image.sprite = closedLid;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        //TODO: Start Game; init player; move camera; move title
     }
 }

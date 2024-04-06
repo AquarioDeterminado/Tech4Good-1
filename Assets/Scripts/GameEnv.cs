@@ -7,28 +7,30 @@ public class GameEnv : MonoBehaviour
 {
 
     private GameObject _player;
+    private Time startTime;
 
     private GameObject _camera;
         // Start is called before the first frame update
     void Start()
     {
-        _player = GameObject.FindGameObjectWithTag("Player");
+        startTime = new Time();
         _camera = GameObject.FindGameObjectWithTag("MainCamera");
     }
     
     void StartGame()
     {
         PrepareCamera();
-        EnablePlayer();
     }
-
-    void EnablePlayer()
-    {
-        _player.SetActive(true);
-    }
+    
 
     void PrepareCamera()
     {
         var camAnim = _camera.GetComponent<Animator>();
     }
+
+    Time getStartTime()
+    {
+        return startTime;
+    }
+        
 }

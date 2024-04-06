@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 253581929}
   - component: {fileID: 253581928}
   - component: {fileID: 253581927}
+  - component: {fileID: 253581930}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -215,6 +216,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &253581930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253581926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16398e8986b314df19a9b2bf68838188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &669252735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -279,10 +292,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: WarmBox
       objectReference: {fileID: 0}
+    - target: {fileID: 794851424395591395, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3232855291702861387, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_Mass
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3232855291702861387, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 46fd6ccdfa9e248209152ecc51283d6a, type: 2}
     m_RemovedComponents:
     - {fileID: 1751752056321078540, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
     m_RemovedGameObjects: []
@@ -291,6 +312,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 794851424395591395, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1146530871}
+    - targetCorrespondingSourceObject: {fileID: 794851424395591395, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1146530873}
     - targetCorrespondingSourceObject: {fileID: 794851424395591395, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1146530872}
@@ -322,7 +346,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1146530867}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 46fd6ccdfa9e248209152ecc51283d6a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -348,6 +372,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0.021981226, y: -0.67411494}
   m_Size: {x: 1.4836103, y: 0.64829206}
   m_Direction: 1
+--- !u!114 &1146530873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146530867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8854da6085946490f94a6b45944561b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyCode: 118
+  forceIntensity: 100
 --- !u!1 &1267736835
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +488,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 46fd6ccdfa9e248209152ecc51283d6a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -470,7 +508,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1267736835}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 46fd6ccdfa9e248209152ecc51283d6a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

@@ -237,11 +237,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.16
+      value: -19.86
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.85
+      value: 2.86
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalPosition.z
@@ -249,19 +249,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99975944
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.02193728
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -273,11 +273,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 2.514
       objectReference: {fileID: 0}
     - target: {fileID: 794851424395591395, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_Name
       value: WarmBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 3232855291702861387, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
+      propertyPath: m_Mass
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1751752056321078540, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}

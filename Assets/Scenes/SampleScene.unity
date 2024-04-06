@@ -320,11 +320,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5170822
+      value: 1.57
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.57610846
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalPosition.z
@@ -414,7 +414,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 358c946487a7949e58c8f2ae12ad354d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeed: 0.5
+  slideForce: 10
+  slideDuration: 0.5
+  slideKey: 115
 --- !u!70 &1146530872
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

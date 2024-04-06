@@ -40,5 +40,6 @@ public class Slide : MonoBehaviour
             var foward = new Vector2(right.x, right.z).normalized;
             _rigidbody.AddForce(foward * defaultSpeed);
         }
+        
     }
 }

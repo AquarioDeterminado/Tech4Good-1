@@ -38,9 +38,7 @@ public class Slide : MonoBehaviour
         {
             var right = transform.right;
             var foward = new Vector2(right.x, right.z).normalized;
-            Vector2 velocity = (new Vector2(foward.x, foward.y )) * defaultSpeed;
-            _rigidbody.velocity = velocity;
+            _rigidbody.AddForce(foward * defaultSpeed);
         }
-        
     }
 }

@@ -22,7 +22,6 @@ public class CameraMovement : MonoBehaviour
         if (newPosition != _playerPosition)
         {
             this.transform.Translate(new Vector3(newPosition.x - _playerPosition.x,0, 0));
-            this.transform.Translate(new Vector3(newPosition.y - 0, _playerPosition.y, 0));
             _playerPosition = newPosition;
         }
     }

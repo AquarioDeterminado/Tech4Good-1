@@ -841,8 +841,8 @@ Transform:
   m_GameObject: {fileID: 1846181403}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 191.43292, y: -20.033892, z: -0.30091313}
-  m_LocalScale: {x: 10.597143, y: 9.088834, z: 1}
+  m_LocalPosition: {x: 361.8943, y: -23.1269, z: -0.30091313}
+  m_LocalScale: {x: 351.52512, y: 15.274694, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 665591862}
@@ -859,6 +859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 574f82745f4c9454090765b68241b9ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: Level
 --- !u!50 &1846181408
 Rigidbody2D:
   serializedVersion: 4

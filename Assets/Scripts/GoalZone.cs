@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GoalZone : MonoBehaviour
 {
+    [SerializeField] private String scene;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,6 @@ public class GoalZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene("WinScreen");
+        SceneManager.LoadScene(scene);
     }
 }

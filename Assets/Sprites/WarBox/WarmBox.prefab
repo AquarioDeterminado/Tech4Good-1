@@ -10,8 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 562373006957897905}
   - component: {fileID: 3232855291702861387}
-  - component: {fileID: 1751752056321078540}
   - component: {fileID: 2872925651597885947}
+  - component: {fileID: 3530415086349291419}
+  - component: {fileID: 4587634899448117528}
+  - component: {fileID: 5689714474815783421}
   m_Layer: 0
   m_Name: WarmBox
   m_TagString: Untagged
@@ -64,8 +66,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &1751752056321078540
-BoxCollider2D:
+--- !u!95 &2872925651597885947
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794851424395591395}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8cae2dd649b554ac1b4b998bfdc34345, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &3530415086349291419
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -73,7 +96,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 794851424395591395}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 46fd6ccdfa9e248209152ecc51283d6a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -96,40 +119,38 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.041473866, y: -0.65324354}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.6007514, y: 0.6082195}
-  m_EdgeRadius: 0
---- !u!95 &2872925651597885947
-Animator:
-  serializedVersion: 5
+  m_Offset: {x: -0.00000011077647, y: -0.7185459}
+  m_Size: {x: 1.4654156, y: 0.49374324}
+  m_Direction: 1
+--- !u!114 &4587634899448117528
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794851424395591395}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8cae2dd649b554ac1b4b998bfdc34345, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358c946487a7949e58c8f2ae12ad354d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slideForce: 10
+  slideDuration: 0.5
+  slideKey: 118
+--- !u!114 &5689714474815783421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794851424395591395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8854da6085946490f94a6b45944561b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyCode: 32
+  forceIntensity: 30
 --- !u!1 &1047513259966989809
 GameObject:
   m_ObjectHideFlags: 0

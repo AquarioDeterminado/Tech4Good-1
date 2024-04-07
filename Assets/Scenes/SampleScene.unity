@@ -1195,6 +1195,10 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4587634899448117528, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
+      propertyPath: rotationAngle
+      value: 45
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1751752056321078540, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
     m_RemovedGameObjects: []
@@ -2743,7 +2747,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 574f82745f4c9454090765b68241b9ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNextScene: 1
   sceneInfo: {fileID: 11400000, guid: a93c6859923e79f4fa27efba197db8ce, type: 2}
   scene: Level
 --- !u!50 &1846181408

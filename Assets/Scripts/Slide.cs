@@ -11,6 +11,7 @@ public class Slide : MonoBehaviour
     private bool isSliding = false;
     private float slideTimer = 0f;
     private Vector3 startingPosition;
+    [SerializeField] private int rotationAngle;
 
     void Start()
     {
@@ -24,11 +25,6 @@ public class Slide : MonoBehaviour
         {
             isSliding = true;
             slideTimer = 0f;
-        }
-
-        if (Input.GetKeyDown("a"))
-        {
-            transform.Rotate(0, 0, 1);
         }
         if (Input.GetKeyDown("r"))
         {
@@ -47,6 +43,14 @@ public class Slide : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, -rb.velocity.y);
             }
             transform.position = startingPosition;
+        }
+        if (Input.GetKey("a")) 
+        {
+            transform.Rotate(new Vector3(0, 0, rotationAngle * (-1)));
+        }
+        if (Input.GetKey("d"))
+        {
+            transform.Rotate(new Vector3 (0,0, rotationAngle));
         }
     }
 

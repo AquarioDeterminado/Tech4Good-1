@@ -859,7 +859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 574f82745f4c9454090765b68241b9ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Level
+  scene: WinScreen
 --- !u!50 &1846181408
 Rigidbody2D:
   serializedVersion: 4

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -11,7 +12,7 @@ public class tittleButton : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        DataSaver.saveData(DateTime.Now, "startTime");
+        PlayerPrefs.SetString("startTime", DateTime.Now.ToOADate().ToString(CultureInfo.CurrentCulture));
         SceneManager.LoadScene("SampleScene");
     }
 }

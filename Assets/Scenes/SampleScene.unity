@@ -364,6 +364,7 @@ GameObject:
   - component: {fileID: 253581927}
   - component: {fileID: 253581930}
   - component: {fileID: 253581931}
+  - component: {fileID: 253581932}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -478,6 +479,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &253581932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253581926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63c1491d9a5da14aaa8ca00bb03c07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinText: {fileID: 2090746131}
+  currrentCoins: 0
 --- !u!1001 &282018566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2728,6 +2743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 574f82745f4c9454090765b68241b9ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNextScene: 1
+  sceneInfo: {fileID: 11400000, guid: a93c6859923e79f4fa27efba197db8ce, type: 2}
   scene: Level
 --- !u!50 &1846181408
 Rigidbody2D:

@@ -21,8 +21,8 @@ public class Coins : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) 
         {
-            Destroy(gameObject);
             CoinCounter.instance.increaseCoins(value);
+            Destroy(gameObject);
         }
     }
 }

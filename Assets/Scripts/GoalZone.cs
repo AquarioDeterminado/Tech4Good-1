@@ -7,10 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GoalZone : MonoBehaviour
 {
-    public bool isNextScene = true;
-
-    [SerializeField]
-    public SceneInfo sceneInfo;
+    [SerializeField] public SceneInfo sceneInfo;
 
     [SerializeField] private String scene;
     // Start is called before the first frame update
@@ -28,14 +25,13 @@ public class GoalZone : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (PlayerPrefs.GetInt("coins") != null)
+        if (PlayerPrefs.GetInt("coins", -1) != -1)
         {
             PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt("coins") + GetComponent<CoinCounter>().currrentCoins);
         } else
         {
             PlayerPrefs.SetInt("coins", GetComponent<CoinCounter>().currrentCoins);
         }
-        sceneInfo.isNextScene = isNextScene;  
         SceneManager.LoadScene(scene);
     }
 }

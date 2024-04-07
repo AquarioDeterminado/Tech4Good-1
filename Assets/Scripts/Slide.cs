@@ -11,7 +11,7 @@ public class Slide : MonoBehaviour
     private bool isSliding = false;
     private float slideTimer = 0f;
     private Vector3 startingPosition;
-    [SerializeField] private int rotationAngle;
+    [SerializeField] private float rotationAngle;
 
     void Start()
     {

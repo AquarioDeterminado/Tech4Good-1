@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using TMPro;
+using Unity.Profiling;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,15 +16,16 @@ public class score : MonoBehaviour
     void Start()
     {
         ShowTime();
-        
+        ShowCoins();
         
     }
 
     private void ShowCoins()
     {
         var totalTimeText = GameObject.Find("TotalCoins");
-
-        totalTimeText.GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetInt("coins").ToString();
+        Debug.Log(totalTimeText);
+        Debug.Log(PlayerPrefs.GetInt("coins"));
+        totalTimeText.GetComponent<TextMeshProUGUI>().text = totalTimeText.GetComponent<TextMeshProUGUI>().text + " " + PlayerPrefs.GetInt("coins").ToString();
     }
 
     private void ShowTime()
@@ -36,7 +38,7 @@ public class score : MonoBehaviour
         var totalTimeText = GameObject.Find("TotalTime");
 
         totalTimeText.GetComponent<TextMeshProUGUI>().text =
-            String.Concat(totalTimeText.GetComponent<TextMeshProUGUI>().text, " " + totalTime.TotalMinutes + " min");
+            String.Concat(totalTimeText.GetComponent<TextMeshProUGUI>().text, " " + totalTime.Minutes + " min. " + totalTime.Seconds + " sec." );
     }
 
     // Update is called once per frame

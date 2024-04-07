@@ -14,6 +14,7 @@ public class ResetButton : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        PlayerPrefs.DeleteKey("coins");
         SceneManager.LoadScene("Title Screen");
     }
 }

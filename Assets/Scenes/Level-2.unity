@@ -3573,11 +3573,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -84.76
+      value: -83.65
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 562373006957897905, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3625,7 +3625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4587634899448117528, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
       propertyPath: rotationAngle
-      value: 10
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3723,7 +3723,7 @@ Transform:
   m_GameObject: {fileID: 1743184486}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22, y: 18.8, z: -10}
+  m_LocalPosition: {x: -20.4, y: 18.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3741,6 +3741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16398e8986b314df19a9b2bf68838188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Prefab: {fileID: 0}
 --- !u!114 &1743184491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3846,7 +3847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103, y: -25}
+  m_AnchoredPosition: {x: 160, y: -70}
   m_SizeDelta: {x: 201, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1789441362

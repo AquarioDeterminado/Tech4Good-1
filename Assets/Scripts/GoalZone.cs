@@ -31,6 +31,7 @@ public class GoalZone : MonoBehaviour
         {
             PlayerPrefs.SetInt("coins", GameObject.FindWithTag("MainCamera").GetComponent<CoinCounter>().currrentCoins);
         }
+        Debug.Log(PlayerPrefs.GetInt("coins"));
         SceneManager.LoadScene(scene);
     }
 }

@@ -13,6 +13,8 @@ public class tittleButton : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         PlayerPrefs.SetString("startTime", DateTime.Now.ToOADate().ToString(CultureInfo.CurrentCulture));
-        SceneManager.LoadScene("SampleScene");
+        PlayerPrefs.DeleteKey("coins");
+        Debug.Log(PlayerPrefs.GetInt("coins"));
+        SceneManager.LoadScene("Level-1");
     }
 }

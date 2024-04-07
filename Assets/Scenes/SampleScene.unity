@@ -1195,6 +1195,10 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4587634899448117528, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
+      propertyPath: rotationAngle
+      value: 45
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1751752056321078540, guid: 3fcacdc8ed0b5476e816df0485ce6333, type: 3}
     m_RemovedGameObjects: []

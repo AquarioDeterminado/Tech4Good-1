@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,16 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class ResetButton : MonoBehaviour, IPointerClickHandler
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        DontDestroyOnLoad(transform.gameObject);
     }
 
     public void OnPointerClick(PointerEventData eventData)

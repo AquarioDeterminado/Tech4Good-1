@@ -24,13 +24,12 @@ public class GoalZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
         if (PlayerPrefs.GetInt("coins", -1) != -1)
         {
-            PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt("coins") + GetComponent<CoinCounter>().currrentCoins);
+            PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt("coins") + GameObject.FindWithTag("MainCamera").GetComponent<CoinCounter>().currrentCoins);
         } else
         {
-            PlayerPrefs.SetInt("coins", GetComponent<CoinCounter>().currrentCoins);
+            PlayerPrefs.SetInt("coins", GameObject.FindWithTag("MainCamera").GetComponent<CoinCounter>().currrentCoins);
         }
         SceneManager.LoadScene(scene);
     }
